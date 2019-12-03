@@ -8,8 +8,8 @@
   }
   mat-card img{
     object-fit: cover; /*this makes de image in src fit to the size of specified below*/
-    width: 80%; /* Here you can use wherever you want to specify the width and also the height of the <img>*/
-    height: 50%;
+    width: auto; /* Here you can use wherever you want to specify the width and also the height of the <img>*/
+    height: 200%;
   }
   .description {
       font: 1em sans-serif;
@@ -17,8 +17,8 @@
   }
 
   .mat-card:not([class*=mat-elevation-z]) {
-    box-shadow: 2px 2px 2px 2px rgb(212, 19, 19), 
-                2px 2px 2px 2px rgba(212, 19, 19), 
+    box-shadow: 2px 2px 2px 2px rgb(212, 19, 19),
+                2px 2px 2px 2px rgba(212, 19, 19),
                 2px 2px 2px 2px rgba(212, 19, 19);
 }
 
@@ -42,5 +42,5 @@
   .price
   {
     font-size: medium;
-    font-weight: bold; 
+    font-weight: bold;
   }
