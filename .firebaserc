@@ -1,5 +1,14 @@
 {
   "projects": {
     "default": "ap1ecommerce"
+  },
+  "targets": {
+    "ap1ecommerce": {
+      "hosting": {
+        "project-firebase": [
+          "ap1ecommerce"
+        ]
+      }
+    }
   }
 }
