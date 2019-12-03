@@ -1,6 +1,6 @@
 <mat-tab-group>
         <mat-tab *ngFor="let categorie of categories" [label]="categorie.label">
-                <div class="cardList">
+                <div class="cardList"  id="id1">
                         <ng-container *ngFor="let course of getCoursesByCategorie(categorie.key)">
                                 <mat-card class="cardListItem example-card">
                                         <mat-card-header>
@@ -9,7 +9,7 @@
                                         </mat-card-header>
                                         <img mat-card-image [src]="course.urlImage">
                                         <mat-card-content>
-                                                <p class="description">
+                                                <p class="description" id ="car">
                                                         {{course.description}}
                                                 </p>
                                            <span fxLayoutAlign="center center"  class="price">{{course.price | currency}}</span>

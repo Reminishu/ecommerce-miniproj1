@@ -15,9 +15,9 @@ export class OrdersComponent implements OnInit {
   displayedColumns: string[] = ['title','urlImage','price'];
   user;
 
-  constructor(private shoppingCart:ShoppingCartService, private router:Router, 
+  constructor(private shoppingCart:ShoppingCartService, private router:Router,
     private loginService:LoginService,private paymentService:PaymentService, private orderService:OrderService) {
- 
+
    }
 
   ngOnInit() {
@@ -64,7 +64,7 @@ export class OrdersComponent implements OnInit {
    //}
   // else
   // {
-     //Update the order with paid=false 
+     // Update the order with paid=false
   // }
 
 

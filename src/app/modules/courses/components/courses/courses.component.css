@@ -1,18 +1,35 @@
 .example-card {
-    width: 600px;
-    height: 10000px;
+    width: 660px;
+    height: 600px;
+    font-family:Helvetica;
+    background-color:#6ba8a9    ;
   }
+  mat-tab-group{
+    background-color:#6ba8a9;
+    color:#ffffff;
+
+  }
+  mat-tab{
+    color:#ffffff;
+  }
+
+#id1{color:#ffffff;
+background-color:#e5dfdf;
+}
   mat-card
   {
-      margin: 10%;
+      margin: 2%;
   }
   mat-card img{
+    padding-left: 3em;
+    padding-right: 3em;
     object-fit: cover; /*this makes de image in src fit to the size of specified below*/
-    width: auto; /* Here you can use wherever you want to specify the width and also the height of the <img>*/
-    height: auto;
+    width: 80%; /* Here you can use wherever you want to specify the width and also the height of the <img>*/
+    height: 33%;
   }
   .description {
-      font: 1em sans-serif;
+      font-family: Helvetica;
+      /* font: 1em sans-serif; */
       font-size:large;
   }
 
@@ -20,6 +37,18 @@
     box-shadow: 2px 2px 2px 2px rgb(212, 19, 19),
                 2px 2px 2px 2px rgba(212, 19, 19),
                 2px 2px 2px 2px rgba(212, 19, 19);
+}
+mat-card-header{
+  padding-left:7%;
+  padding-right:7%;
+}
+mat-card-title{
+
+
+}
+#car{
+  font-family:Roboto;
+  font-size:medium;
 }
 
 .cardList {
