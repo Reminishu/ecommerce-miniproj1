@@ -1,6 +1,7 @@
 ## Ecourse-commerce
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.9.
+It is also hosted online at https://ap1ecommerce.firebaseapp.com
 
 ## Development server
 
