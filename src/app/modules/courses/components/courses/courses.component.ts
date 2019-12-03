@@ -1,6 +1,6 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Subscriber, Subscription, from } from 'rxjs';
-import { CategorieService } from 'src/app/modules/commun/services/categorie.service';
+import { CategorieService } from 'src/app/modules/common/services/categorie.service';
 import { CourseService } from '../../services/course.service';
 import {mergeMap,map, switchMap} from 'rxjs/operators';
 import { ShoppingCartService } from 'src/app/modules/shoppingCart/services/shopping-cart.service';
@@ -23,7 +23,7 @@ export class CoursesComponent implements OnInit,OnDestroy {
   coursesAccess:any[]=[];
 
 
-  constructor(private serviceCategorie:CategorieService,private serviceCourses:CourseService, 
+  constructor(private serviceCategorie:CategorieService,private serviceCourses:CourseService,
     private serviceShoppingCart:ShoppingCartService
     ,private loginService:LoginService,
     private orderService:OrderService,
@@ -68,7 +68,7 @@ export class CoursesComponent implements OnInit,OnDestroy {
                      ).subscribe(coursesOrder=>{
 
                      })
-                                                            
+
   }
   getCoursesByCategorie(key)
   {
@@ -85,7 +85,7 @@ export class CoursesComponent implements OnInit,OnDestroy {
   }
   existCourseInShoppingCart(key):boolean
   {
-   return this.coursesShoppingCart.find((course:any)=>course.key==key) 
+   return this.coursesShoppingCart.find((course:any)=>course.key==key)
   }
 
   DeleteToCart(course)
@@ -95,13 +95,13 @@ export class CoursesComponent implements OnInit,OnDestroy {
 
   ExistCoursesById(key):boolean
   {
-    return this.coursesAccess.find((course:any)=>course.key==key) 
+    return this.coursesAccess.find((course:any)=>course.key==key)
   }
   AccessCourse(key)
   {
     this.router.navigate(['/course-content',key])
 
   }
-  
+
 
 }

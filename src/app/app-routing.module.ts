@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { HomeComponent } from './modules/commun/components/home/home.component';
+import { HomeComponent } from './modules/common/components/home/home.component';
 import { CoursesComponent } from './modules/courses/components/courses/courses.component';
 import { LoginComponent } from './modules/authen/components/login/login.component';
-import { AboutComponent } from './modules/commun/components/about/about.component';
+import { AboutComponent } from './modules/common/components/about/about.component';
 import { combineAll } from 'rxjs/operators';
 import { OrdersComponent } from './modules/orders/components/orders/orders.component';
 import { AdminCoursesComponent } from './modules/admin/components/admin-courses/admin-courses.component';
@@ -15,7 +15,7 @@ import { CourseContentComponent } from './modules/courses/components/course-cont
 
 
 const routes: Routes = [
- 
+
   {
     path:'',
     component:HomeComponent

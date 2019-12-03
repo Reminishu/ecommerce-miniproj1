@@ -1,6 +1,6 @@
 import { Component, OnInit, Inject } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
-import { CategorieService } from 'src/app/modules/commun/services/categorie.service';
+import { CategorieService } from 'src/app/modules/common/services/categorie.service';
 import { CourseService } from '../../services/course.service';
 import { Course } from '../../models/cours.model';
 import { MatDialogRef, MAT_DIALOG_DATA, MatInputModule } from '@angular/material';
@@ -20,9 +20,9 @@ export class CourseComponent implements OnInit {
     private serviceCourse:CourseService,
     public dialogRef: MatDialogRef<CourseComponent>,
     @Inject(MAT_DIALOG_DATA) public idCourse
-    ) { 
-   
- 
+    ) {
+
+
   }
 
   ngOnInit() {
@@ -47,18 +47,18 @@ export class CourseComponent implements OnInit {
                                  this.course=course as Course;
                                  this.initalizeCourse(course);
                              })
-                        
-                           
-     
+
+
+
     }
   }
   initalizeCourse(course)
   {
-    this.regiForm = this.fb.group({  
-      'Title' : [ course?course.title:null,Validators.required],  
-      'Description' : [course?course.description:null, Validators.required],  
-      'Price' : [ course?course.price:null,Validators.required],  
-      'UrlImage' : [ course?course.urlImage:null,Validators.required],  
+    this.regiForm = this.fb.group({
+      'Title' : [ course?course.title:null,Validators.required],
+      'Description' : [course?course.description:null, Validators.required],
+      'Price' : [ course?course.price:null,Validators.required],
+      'UrlImage' : [ course?course.urlImage:null,Validators.required],
       'Categorie':[ course?course.categorie:null,Validators.required]
     });
 
@@ -89,10 +89,10 @@ export class CourseComponent implements OnInit {
           this.dialogRef.close();
         });
       }
-     
+
      }
 
-    
+
 
   }
 }
