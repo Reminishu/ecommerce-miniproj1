@@ -1,3 +1,6 @@
+# ecommerce-miniproj1
+AP Mini Project 1 [e-Commerce Website]
+
 ## Ecourse-commerce
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.9.
